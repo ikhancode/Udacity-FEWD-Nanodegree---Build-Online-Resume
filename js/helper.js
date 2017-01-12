@@ -95,7 +95,6 @@ function inName(name){
   itnlName = itnlName.join(" ");
   return itnlName;
 }
-$("#main").append(internationalizeButton);
 
 /*
 This is the fun part. Here's where we generate the custom Google Map for the website.
@@ -183,7 +182,7 @@ function initializeMap() {
 
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
-      // your code goes here!
+      window.location.href = 'https://en.wikipedia.org/wiki/List_of_cities_in_New_Zealand';
     });
 
     // this is where the pin actually gets added to the map.
